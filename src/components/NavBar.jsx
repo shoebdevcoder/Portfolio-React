@@ -4,7 +4,8 @@ import { GiMoon } from "react-icons/gi";
 import { MdHomeFilled, MdPermContactCalendar } from "react-icons/md";
 import { Link } from "react-router-dom";
 import ThemeContext from "../assets/Theme/ThemeContext";
-import logo from "../assets/images/s.svg";
+// import logo from "../assets/images/s.svg";
+import { BiMenu, BiUser } from "react-icons/bi";
 
 const NavBar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -22,7 +23,7 @@ const NavBar = () => {
     <div className="NavBar">
       <div className="nav-left">
         {/* <img src={logo} alt="" /> */}
-        <h1>Hello..MY PORTFOLIO</h1>
+        <h1><BiUser/>Shoeb Ahmed Siddiqui</h1>
       </div>
       <div className="nav">
         <div className="icons">
@@ -51,6 +52,11 @@ const NavBar = () => {
           <Link onClick={toggleTheme}>
             <GiMoon />
             {theme === "light" ? "Dark" : "Light"}
+          </Link>
+        </div>
+        <div className="icons menu-icon">
+          <Link>
+            <BiMenu />
           </Link>
         </div>
       </div>

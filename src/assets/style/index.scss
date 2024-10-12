@@ -51,6 +51,7 @@ body.light-theme {
         .icons{
             padding: 10px;
             border-radius: 5px;
+            font-size: 20px;
             &:hover{
                 background-color: var(--bg-color);
                 transition: .5s;
@@ -60,6 +61,20 @@ body.light-theme {
             }
             svg{
                 font-size: 30px
+            }
+        }
+        .menu-icon{
+            display: none;
+            @media screen and (max-width: 720px){
+                .menu-icon{
+                    a{
+                        display: block;
+                        border: 1px solid red;
+                        color: black;
+                        background-color: red;
+
+                    }
+                }
             }
         }
         a{
@@ -74,6 +89,11 @@ body.light-theme {
             width: 30px;
             height: 30px;
             color: red;
+        }
+    }
+    @media screen and (max-width: 720px){
+        h1{
+            font-size: 20px;
         }
     }
 }
@@ -103,6 +123,7 @@ body.light-theme {
             p{
                 color: var(--p);
                 text-align: justify;
+                padding-left: 5px;
             }
         }
         @media screen and (max-width: 720px){
@@ -136,6 +157,18 @@ body.light-theme {
                     transition: .5s;
                     color: white;
                 }
+            }
+        }
+        @media screen and (max-width: 720px){
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h1{
+                border-bottom:5px solid white;
+            }
+            .social-icons-main{
+                font-size: 25px;
             }
         }
     }
@@ -204,34 +237,53 @@ body.light-theme {
         .Skills{
             // border: 1px solid red;
             box-shadow: 0px 0px 10px grey;
-            height: 400px;
+            // height: 400px
             width: 800px;
             border-radius: 10px;
-            padding: 10px;
+            padding: 20px;
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
             flex-wrap: wrap;
             gap: 35px;
-            .skills-main{
-                border: 1px solid var(--bg-color);
-                border-radius: 5px;
+            .skill-origin{
+                width: 100%;
                 display: flex;
-                justify-content: space-around;
+                justify-content: flex-start;
                 align-items: center;
-                height: 100px;
-                width: 100px;
+                gap: 20px;
                 flex-wrap: wrap;
-                img{
-                    height: inherit;
+                h4{
+                    // width: 100%;
+                    padding-left: 10px;
+                    // color: white;
+                    width: inherit;
+                    background-color: rgba(173, 216, 230, 0.321);
+                }
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                .skills-main{
+                    // border: 1px solid var(--bg-color);
                     border-radius: 5px;
-                    object-fit: contain;
-                }
-                h5{
-                    font-size: 15px;
-                }
-                &:hover{
-                    box-shadow: 0px 0px 10px var(--bg-color);
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 100px;
+                    width: 100px;
+                    flex-wrap: wrap;
+                    img{
+                        height: inherit;
+                        border-radius: 5px;
+                        object-fit: contain;
+                    }
+                    h5{
+                        font-size: 15px;
+                    }
+                    &:hover{
+                        box-shadow: 0px 0px 10px var(--bg-color);
+                    }
                 }
             }
         }

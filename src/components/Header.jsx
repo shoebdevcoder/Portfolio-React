@@ -1,9 +1,9 @@
 import React from "react";
 import profile from "../assets/images/p2.png";
 import Typewriter from "typewriter-effect";
-import { BsGithub, BsInstagram } from "react-icons/bs";
+import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { SiGmail } from "react-icons/si";
 
 const Header = () => {
   return (
@@ -60,7 +60,10 @@ const Header = () => {
             <BsGithub />
           </div>
           <div className="social-icons">
-            <MdEmail />
+            <SiGmail />
+          </div>
+          <div className="social-icons">
+            <BsLinkedin />
           </div>
         </div>
       </div>
