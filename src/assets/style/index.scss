@@ -52,6 +52,12 @@ body.light-theme {
             padding: 10px;
             border-radius: 5px;
             font-size: 20px;
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
             &:hover{
                 background-color: var(--bg-color);
                 transition: .5s;
@@ -61,6 +67,10 @@ body.light-theme {
             }
             svg{
                 font-size: 30px
+            }
+            button{
+                background: none;
+                border: none;
             }
         }
         .menu-icon{
@@ -142,7 +152,10 @@ body.light-theme {
         padding: 10px;
         margin-bottom: 50px;
         h1{
+            // color: var(--bg-color);
             border-bottom: 5px solid var(--p);
+            // -webkit-text-stroke-width: 5px;
+            // -webkit-text-stroke-color: black;
         }
         .social-icons-main{
             display: flex;
@@ -338,3 +351,49 @@ body.light-theme {
         }
     }
 }
+
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 100%;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .resume-btn {
+    // padding: 10px 20px;
+    // background-color: #4CAF50;
+    // color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-btn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
