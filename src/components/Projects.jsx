@@ -5,6 +5,11 @@ const Projects = () => {
     <div className='Projects'>
       <div className="project_lists">
         <a href="">Matrimony Website</a>
+        <a href="">Matrimony Website</a>
+        <a href="">Matrimony Website</a>
+        <a href="">Matrimony Website</a>
+        <a href="">Matrimony Website</a>
+        <a href="">Matrimony Website</a>
       </div>
     </div>
   )
