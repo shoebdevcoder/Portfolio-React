@@ -4,12 +4,20 @@ const Projects = () => {
   return (
     <div className='Projects'>
       <div className="project_lists">
-        <a href="">Matrimony Website</a>
-        <a href="">Matrimony Website</a>
-        <a href="">Matrimony Website</a>
-        <a href="">Matrimony Website</a>
-        <a href="">Matrimony Website</a>
-        <a href="">Matrimony Website</a>
+        <h3>Matrimony Webapp</h3>
+        <p>Description</p>
+      </div>
+      <div className="project_lists">
+        <h3>Matrimony Webapp</h3>
+        <p>Description</p>
+      </div>
+      <div className="project_lists">
+        <h3>Matrimony Webapp</h3>
+        <p>Description</p>
+      </div>
+      <div className="project_lists">
+        <h3>Matrimony Webapp</h3>
+        <p>Description</p>
       </div>
     </div>
   )

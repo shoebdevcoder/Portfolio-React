@@ -321,10 +321,22 @@ body.light-theme {
         }
         .Projects{
             box-shadow: 0px 0px 10px grey;
-            height: 300px;
+            // height: 300px;
             width: 800px;
             border-radius: 10px;
             padding: 10px;
+
+            .project_lists{
+                background-color: var(--bg-color);
+                // border: 2px solid var(--bg-color);
+                border-radius: 10px;
+                padding: 5px;
+                margin: 10px;
+                color: white;
+                &:hover{
+                    border: 1px solid red;
+                }
+            }
         }
         @media screen and (max-width: 720px) {
             .Projects{
