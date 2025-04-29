@@ -7,18 +7,6 @@ const Projects = () => {
         <h3>Matrimony Webapp</h3>
         <p>Description</p>
       </div>
-      <div className="project_lists">
-        <h3>Matrimony Webapp</h3>
-        <p>Description</p>
-      </div>
-      <div className="project_lists">
-        <h3>Matrimony Webapp</h3>
-        <p>Description</p>
-      </div>
-      <div className="project_lists">
-        <h3>Matrimony Webapp</h3>
-        <p>Description</p>
-      </div>
     </div>
   )
 }
