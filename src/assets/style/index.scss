@@ -9,6 +9,22 @@
     box-sizing: border-box;
 }
 
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        // scale: 0.5;
+        transform: translateX(-100px);
+        // clip-path: inset(100% 100% 0 0);
+    }
+    to{
+        opacity: 1;
+        // scale: 1;
+        transform: translateX(0px);
+        // clip-path: inset(0 0 0 0);
+    }
+}
+
 :root{
     --h1 : skyblue ;
     --p : black;
@@ -144,6 +160,9 @@ body.light-theme {
         }
     }
     .social-media{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -199,6 +218,9 @@ body.light-theme {
     flex-wrap: nowrap;
     gap: 40px;
     .edu{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
         h1{
             border-bottom: 5px solid var(--bg-color);
         }
@@ -244,6 +266,9 @@ body.light-theme {
         }
     }
     .skills{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
         h1{
             border-bottom: 5px solid var(--bg-color);
         }
@@ -316,6 +341,9 @@ body.light-theme {
         }
     }
     .projects{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
         h1{
             border-bottom: 5px solid var(--bg-color);
         }
@@ -386,6 +414,9 @@ body.light-theme {
 }
 
 .Footer{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
     height: 50vh;
     background-color: var(--bg-color);
     padding: 20px;
