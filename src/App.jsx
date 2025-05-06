@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import { ThemeProvider } from "./context/Theme";
 import Loading from "./pages/Loading";
 import Contact from "./pages/Contact";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   const [themeMode, setThemeMode] = useState("light");
@@ -40,6 +41,7 @@ const App = () => {
     <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
       <div className="App mt-5">
         {/* <ThemeProvider> */}
+        <NavBar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />

@@ -41,7 +41,7 @@ const NavBar = () => {
   const closeResumeModal = () => setIsResumeOpen(false);
 
   return (
-    <div className="NavBar">
+    <div className="container NavBar">
       <div className="nav-left">
         {/* <img src={logo} alt="" /> */}
         <h1>
