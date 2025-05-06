@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 // import Footer from './components/Footer'
 import { ThemeProvider } from "./context/Theme";
 import Loading from "./pages/Loading";
+import Contact from "./pages/Contact";
 
 const App = () => {
   const [themeMode, setThemeMode] = useState("light");
@@ -41,6 +42,7 @@ const App = () => {
         {/* <ThemeProvider> */}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         {/* <Footer/> */}
         {/* </ThemeProvider> */}
