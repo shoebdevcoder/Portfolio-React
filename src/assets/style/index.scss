@@ -842,18 +842,13 @@ body.dark-theme {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  @media screen and (max-width: 720px) {
-    .Education {
-      width: auto;
-      height: auto;
-    }
-  }
   .footer-form{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    flex-wrap: wrap;
     input{
       width: 400px;
       padding: 10px;
@@ -876,5 +871,32 @@ body.dark-theme {
       color: white;
       box-shadow: 0px 0px 10px var(--p);
     }
+  }
+  @media screen and (max-width: 720px){
+    .footer-main{
+      font-size: 10px;
+    }
+    .footer-form{
+      gap: 10px;
+      input{
+        width: 300px;
+        padding: 5px;
+      }
+      textarea{
+        padding: 5px;
+        width: 300px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .Footer{
+    overflow: scroll;
+    height: 70vh;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
 }
