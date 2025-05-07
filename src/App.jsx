@@ -41,10 +41,10 @@ const App = () => {
     <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
       <div className="App mt-5">
         {/* <ThemeProvider> */}
-        <NavBar/>
+        {/* <NavBar/> */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/contact" element={<Contact />} /> */}
         </Routes>
         {/* <Footer/> */}
         {/* </ThemeProvider> */}

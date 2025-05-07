@@ -8,7 +8,7 @@ const Projects = () => {
       img: "/project.png",
       link: "",
     },
-    { title: "Tekisky Portal" },
+    // { title: "Tekisky Portal" },
   ];
 
   return (
@@ -20,7 +20,7 @@ const Projects = () => {
             <div className="text">
               <h3>{project.title}</h3>
               <p>{project.desc}</p>
-              <span>Visit:<a href={project.link}>Link</a></span>
+              <span>Visit:<a href={project.link}>Click Here</a></span>
             </div>
           </div>
         );

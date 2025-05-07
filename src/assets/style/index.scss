@@ -316,7 +316,7 @@ body.dark-theme {
         margin: 10px 0px 0px 0px;
         // color: white;
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: center;
         text-align: center;
         &:hover {
@@ -327,11 +327,28 @@ body.dark-theme {
         .text {
           // border: 1px solid red;
           display: flex;
-          // justify-content: space-around;
+          justify-content: space-around;
+          gap: 20px;
           align-items: flex-start;
           flex-direction: column;
+          text-align: left;
           p {
             text-align: left;
+          }
+          span{
+            // border: 1px solid red;
+            background-color: rgba(32, 15, 15, 0.173);
+            width: 140px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+            a{
+              text-decoration: none;
+              color: blue;
+            }
           }
         }
         img {
@@ -669,26 +686,6 @@ body.dark-theme {
   }
 }
 
-.Footer {
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 20%;
-  // width: 100%;
-  height: 50vh;
-  background-color: var(--bg-color);
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  @media screen and (max-width: 720px) {
-    .Education {
-      width: auto;
-      height: auto;
-    }
-  }
-}
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.75);
@@ -823,11 +820,61 @@ body.dark-theme {
         }
       }
     }
-
+    
     .main-img {
       img {
         display: none;
       }
+    }
+  }
+}
+
+.Footer {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+  // width: 100%;
+  height: 60vh;
+  background-color: var(--bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  @media screen and (max-width: 720px) {
+    .Education {
+      width: auto;
+      height: auto;
+    }
+  }
+  .footer-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    input{
+      width: 400px;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      box-shadow: 0px 0px 10px var(--p);
+    }
+    textarea{
+      height: 200px;
+      width: 400px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      padding: 10px;
+      box-shadow: 0px 0px 10px var(--p);
+    }
+    #btn{
+      background-color: black;
+      color: white;
+      box-shadow: 0px 0px 10px var(--p);
     }
   }
 }
